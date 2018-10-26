@@ -7,10 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Spring MVC Form Handling</title>
+<script src="script.js"></script>
 </head>
 <body>
 <h2>Team Registration Form</h2>
-<mvc:form modelAttribute="team" action="result.mvc">
+<mvc:form name="entryform" modelAttribute="team" action="result.mvc" onsubmit="return validateInfo()">
 	<table>
 	    <tr>
 	        <td><mvc:label path="teamname">Team Name</mvc:label></td>
